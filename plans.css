@@ -1,0 +1,140 @@
+ /* =====Plans =====*/
+ 
+ .plans {
+     background-color: #f5f0f0;
+ }
+ 
+ .plans h2 {
+     color: #696666;
+     font-size: 2em;
+     width: 14rem;
+ }
+ 
+ .plans #ptop {
+     color: #696666;
+     font-size: .95em;
+     width: 17rem;
+ }
+ 
+ .price-plans {
+     display: flex;
+     justify-content: space-between;
+     /* padding: 2rem 0; */
+     margin: 5rem 0 0;
+ }
+ 
+ .price-plans .plan {
+     width: 15%;
+     display: flex;
+     flex-direction: column;
+     /* padding: .5rem; */
+ }
+ 
+ .descripition {
+     background-color: #196aff;
+     display: flex;
+     align-items: flex-end;
+     text-align: center;
+     color: white;
+ }
+ 
+ .price {
+     background-color: #0066ff;
+     color: white;
+     font-weight: 600;
+     text-align: center;
+ }
+ 
+ .descripition p {
+     line-height: .6rem;
+     align-self: flex-end;
+ }
+ /* ====PLAN1 ===== */
+ 
+ .price-plans .plan1 {
+     height: 7rem;
+ }
+ /* .price-plans .plan1 .price {
+     background-color: #0066ff;
+     color: white;
+     font-weight: 600;
+     text-align: center;
+ } */
+ 
+ .price-plans .plan1 .descripition {
+     font-size: .6em;
+     flex-basis: 60%;
+ }
+ /*===PLAN2 ===== */
+ 
+ .price-plans .plan2 {
+     height: 10rem;
+     transform: translateY(-1.93rem);
+ }
+ /* .price-plans .plan2 .price {
+     background-color: #0066ff;
+     color: white;
+     font-weight: 600;
+     text-align: center;
+ } */
+ 
+ .price-plans .plan2 .descripition {
+     font-size: .6em;
+     flex-basis: 65%;
+ }
+ /*===PLAN3 ===== */
+ 
+ .price-plans .plan3 {
+     height: 13rem;
+     transform: translateY(-3.7rem);
+ }
+ /* .price-plans .plan3 .price {
+     background-color: #0066ff;
+     color: white;
+     font-weight: 600;
+     text-align: center;
+ } */
+ 
+ .price-plans .plan3 .descripition {
+     font-size: .6em;
+     flex-basis: 70%;
+ }
+ /*===PLAN4 ===== */
+ 
+ .price-plans .plan4 {
+     height: 16rem;
+     transform: translateY(-5.4rem);
+ }
+ /* .price-plans .plan4 .price {
+     background-color: #0066ff;
+     color: white;
+     font-weight: 600;
+     text-align: center;
+ } */
+ 
+ .price-plans .plan4 .descripition {
+     font-size: .6em;
+     flex-basis: 75%;
+ }
+ /*===PLAN5 ===== */
+ 
+ .price-plans .plan5 {
+     height: 19rem;
+     transform: translateY(-7.1rem);
+ }
+ 
+ .price-plans .plan5 .descripition {
+     font-size: .6em;
+     flex-basis: 80%;
+ }
+ /*===PLAN6 ===== */
+ 
+ .price-plans .plan6 {
+     height: 22rem;
+     transform: translateY(-8.9rem);
+ }
+ 
+ .price-plans .plan6 .descripition {
+     font-size: .6em;
+     flex-basis: 85%;
+ }
