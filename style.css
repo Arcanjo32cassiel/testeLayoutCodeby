@@ -1,237 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    width: 100%;
-}
-
-header {
-    background: url(./img/header.webp) no-repeat center center;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 28rem;
-    position: relative;
-}
-
-.shadow {
-    background-color: rgba(14, 67, 241, 0.7);
-    height: 100%;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-}
-
-header img {
-    width: 7rem;
-    margin-top: 2rem;
-}
-
-header h1 {
-    color: white;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 600;
-    line-height: 1;
-    margin-top: 3.5rem;
-}
-
-header a {
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-    background-color: azure;
-    padding: .6rem 1rem;
-    border-radius: .4rem;
-    margin-top: 3.8rem;
-}
-
-.content,
-.content-plans {
-    width: 80%;
-    margin: 0 10%;
-    padding: 1rem;
-}
-
-.content>h2 {
-    height: 3rem;
-    color: #696666;
-    font-size: 2em;
-}
-
-.content>p {
-    height: 3rem;
-    color: #696666;
-}
-
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.categories img {
-    width: 100%;
-}
-
-.categories .categories-child {
-    height: 16rem;
-}
-
-.categories h3 {
-    font-size: 3rem;
-}
-
-.categories p {
-    font-weight: 600;
-}
-
-.categories-child {
-    transition: 2s;
-}
-
-
-/*==== nature ===== */
-
-.categories .nature {
-    /* flex-basis: 18.7rem; */
-    flex-basis: 39%;
-    position: relative;
-    display: flex;
-}
-
-.info-nature {
-    position: absolute;
-    align-self: flex-start;
-    margin: 2rem;
-    color: white;
-}
-
-
-/*==== daily ===== */
-
-.categories .daily {
-    /* flex-basis: 38rem; */
-    flex-basis: 58%;
-    position: relative;
-    display: flex;
-}
-
-.info-daily {
-    position: absolute;
-    align-self: flex-start;
-    margin: 2rem;
-    color: white;
-}
-
-
-/*==== together ===== */
-
-.categories .together {
-    position: relative;
-    display: flex;
-    flex-grow: 3;
-    margin: 1.4rem 0;
-}
-
-.info-together {
-    position: absolute;
-    align-self: center;
-    margin: 2rem;
-    color: white;
-}
-
-
-/*==== analysis ===== */
-
-.categories .analysis {
-    flex-basis: 58%;
-    position: relative;
-    display: flex;
-}
-
-.info-analysis {
-    position: absolute;
-    margin: 2rem;
-    color: white;
-    left: 8rem;
-}
-
-.info-analysis h3 {
-    text-align: right;
-}
-
-.info-analysis p {
-    text-align: right;
-}
-
-
-/*==== Pictures ===== */
-
-.categories .pictures {
-    flex-basis: 39%;
-    position: relative;
-    display: flex;
-}
-
-.info-pictures {
-    position: absolute;
-    align-self: flex-start;
-    margin: 2rem;
-    color: white;
-}
-
-
-/* Responsive Mobile */
-
-@media (max-width:834px) {
-    #btnsee {
-        position: absolute;
-        right: -12rem;
-    }
-}
-
-@media (max-width:940px) {
-    .categories {
-        display: flex;
-        flex-direction: column;
-    }
-    .categories-child {
-        flex-basis: 100%;
-    }
-    .categories-child {
-        margin: 1.4rem 0;
-    }
-    .categories .analysis {
-        position: relative;
-        display: flex;
-    }
-    .info-analysis {
-        position: absolute;
-        color: white;
-        left: 0;
-        align-self: flex-start;
-    }
-    .info-analysis h3 {
-        text-align: initial;
-    }
-    .info-analysis p {
-        text-align: inherit;
-    }
-}
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                height: 100vh;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            .container {
+                width: 100%;
+            }
+            
+            header {
+                background: url(./img/header.webp) no-repeat center center;
+                background-size: 100% 100%;
+                width: 100%;
+                height: 28rem;
+                position: relative;
+            }
+            
+            .shadow {
+                background-color: rgba(14, 67, 241, 0.7);
+                height: 100%;
+            }
+            
+            .header-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 100%;
+            }
+            
+            header img {
+                width: 7rem;
+                margin-top: 2rem;
+            }
+            
+            header h1 {
+                color: white;
+                text-align: center;
+                font-size: 3em;
+                font-weight: 600;
+                line-height: 1;
+                margin-top: 3.5rem;
+                transition: 2s;
+            }
+            
+            header a {
+                color: #333;
+                text-align: center;
+                text-decoration: none;
+                background-color: azure;
+                padding: .6rem 1rem;
+                border-radius: .4rem;
+                margin-top: 3.8rem;
+            }
+            
+            .content,
+            .content-plans {
+                width: 80%;
+                margin: 0 10%;
+                padding: 1rem;
+            }
+            
+            .content>h2 {
+                height: 3rem;
+                color: #696666;
+                font-size: 2em;
+            }
+            
+            .content>p {
+                height: 3rem;
+                color: #696666;
+            }
+            
+            .categories {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .categories img {
+                width: 100%;
+            }
+            
+            .categories .categories-child {
+                height: 16rem;
+            }
+            
+            .categories h3 {
+                font-size: 3rem;
+            }
+            
+            .categories p {
+                font-weight: 600;
+            }
+            
+            .categories-child {
+                transition: 2s;
+            }
+            /*==== nature ===== */
+            
+            .categories .nature {
+                /* flex-basis: 18.7rem; */
+                flex-basis: 39%;
+                position: relative;
+                display: flex;
+            }
+            
+            .info-nature {
+                position: absolute;
+                align-self: flex-start;
+                margin: 2rem;
+                color: white;
+            }
+            /*==== daily ===== */
+            
+            .categories .daily {
+                /* flex-basis: 38rem; */
+                flex-basis: 58%;
+                position: relative;
+                display: flex;
+            }
+            
+            .info-daily {
+                position: absolute;
+                align-self: flex-start;
+                margin: 2rem;
+                color: white;
+            }
+            /*==== together ===== */
+            
+            .categories .together {
+                position: relative;
+                display: flex;
+                flex-grow: 3;
+                margin: 1.4rem 0;
+            }
+            
+            .info-together {
+                position: absolute;
+                align-self: center;
+                margin: 2rem;
+                color: white;
+            }
+            /*==== analysis ===== */
+            
+            .categories .analysis {
+                flex-basis: 58%;
+                position: relative;
+                display: flex;
+            }
+            
+            .info-analysis {
+                position: absolute;
+                margin: 2rem;
+                color: white;
+                left: 8rem;
+            }
+            
+            .info-analysis h3 {
+                text-align: right;
+            }
+            
+            .info-analysis p {
+                text-align: right;
+            }
+            /*==== Pictures ===== */
+            
+            .categories .pictures {
+                flex-basis: 39%;
+                position: relative;
+                display: flex;
+            }
+            
+            .info-pictures {
+                position: absolute;
+                align-self: flex-start;
+                margin: 2rem;
+                color: white;
+            }
+            /* Responsive Mobile */
+            
+            @media (max-width:834px) {
+                header h1 {
+                    color: white;
+                    text-align: center;
+                    font-size: 1.6em;
+                    font-weight: 600;
+                    line-height: 1;
+                    margin-top: 3.5rem;
+                }
+            }
+            
+            @media (max-width:940px) {
+                .categories {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .categories-child {
+                    flex-basis: 100%;
+                }
+                .categories-child {
+                    margin: 1.4rem 0;
+                }
+                .categories .analysis {
+                    position: relative;
+                    display: flex;
+                }
+                .info-analysis {
+                    position: absolute;
+                    color: white;
+                    left: 0;
+                    align-self: flex-start;
+                }
+                .info-analysis h3 {
+                    text-align: initial;
+                }
+                .info-analysis p {
+                    text-align: inherit;
+                }
+            }
