@@ -1,7 +1,18 @@
  /* =====Plans =====*/
  
  .plans {
-     background-color: #f5f0f0;
+     background-color: #f1efef;
+ }
+ 
+ .content-plans {
+     position: relative;
+     /* display: flex; */
+ }
+ 
+ .title-plans {
+     position: absolute;
+     /* align-self: flex-start; */
+     top: 2.9rem;
  }
  
  .plans h2 {
@@ -19,23 +30,30 @@
  .price-plans {
      display: flex;
      justify-content: space-between;
-     /* padding: 2rem 0; */
-     margin: 5rem 0 0;
+     margin: 2rem 0 2rem;
+     transform: rotateX(180deg);
+     transition: .3s;
  }
  
  .price-plans .plan {
      width: 15%;
      display: flex;
      flex-direction: column;
-     /* padding: .5rem; */
+     transition: .2s;
+ }
+ 
+ .price-plans .plan:hover {
+     transform: translateY(10px) scaleY(1.1);
+     /* transition: .2s ease-in-out; */
  }
  
  .descripition {
-     background-color: #196aff;
+     background-color: #2c82f3;
      display: flex;
      align-items: flex-end;
      text-align: center;
      color: white;
+     transform: rotateX(-180deg);
  }
  
  .price {
@@ -43,23 +61,21 @@
      color: white;
      font-weight: 600;
      text-align: center;
+     transform: rotateX(-180deg)
  }
  
  .descripition p {
-     line-height: .6rem;
+     line-height: .9em;
      align-self: flex-end;
+     margin-bottom: 1.5rem;
+     /* 
+     text-align: center; */
  }
  /* ====PLAN1 ===== */
  
  .price-plans .plan1 {
      height: 7rem;
  }
- /* .price-plans .plan1 .price {
-     background-color: #0066ff;
-     color: white;
-     font-weight: 600;
-     text-align: center;
- } */
  
  .price-plans .plan1 .descripition {
      font-size: .6em;
@@ -69,14 +85,7 @@
  
  .price-plans .plan2 {
      height: 10rem;
-     transform: translateY(-1.93rem);
  }
- /* .price-plans .plan2 .price {
-     background-color: #0066ff;
-     color: white;
-     font-weight: 600;
-     text-align: center;
- } */
  
  .price-plans .plan2 .descripition {
      font-size: .6em;
@@ -86,14 +95,7 @@
  
  .price-plans .plan3 {
      height: 13rem;
-     transform: translateY(-3.7rem);
  }
- /* .price-plans .plan3 .price {
-     background-color: #0066ff;
-     color: white;
-     font-weight: 600;
-     text-align: center;
- } */
  
  .price-plans .plan3 .descripition {
      font-size: .6em;
@@ -103,14 +105,7 @@
  
  .price-plans .plan4 {
      height: 16rem;
-     transform: translateY(-5.4rem);
  }
- /* .price-plans .plan4 .price {
-     background-color: #0066ff;
-     color: white;
-     font-weight: 600;
-     text-align: center;
- } */
  
  .price-plans .plan4 .descripition {
      font-size: .6em;
@@ -120,7 +115,6 @@
  
  .price-plans .plan5 {
      height: 19rem;
-     transform: translateY(-7.1rem);
  }
  
  .price-plans .plan5 .descripition {
@@ -131,10 +125,37 @@
  
  .price-plans .plan6 {
      height: 22rem;
-     transform: translateY(-8.9rem);
  }
  
  .price-plans .plan6 .descripition {
      font-size: .6em;
      flex-basis: 85%;
+ }
+ 
+ @media (max-width:722px) {
+     .price-plans {
+         flex-wrap: wrap;
+         margin-top: 10rem;
+     }
+     .content-plans {
+         display: flex;
+         justify-content: center;
+     }
+     .price-plans .plan:hover {
+         transform: scaleY(1.1);
+         /* transition: .2s ease-in-out; */
+     }
+     .content-plans .title-plans {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+     .price-plans .plan {
+         width: 40%;
+         height: 5rem;
+         display: flex;
+         margin: 0.7rem 0;
+         flex-direction: row;
+     }
  }
